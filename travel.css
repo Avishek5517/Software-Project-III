@@ -1,0 +1,651 @@
+/*-------- Adding Mulish font from google font--------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+/*-------------- Shared styles -------------- */
+.text-title {
+    color: #131318;
+    font-family: Mulish;
+    font-weight: 800;
+}
+
+.text-description {
+    font-family: Mulish;
+    font-weight: 400;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    background: #FF5400;
+    padding: 14px 35px;
+    cursor: pointer;
+    border: 0;
+}
+.btn-primary:hover{
+    color: #FF5400;
+    background: none;
+    border: 1px solid #FF5400;
+    
+}
+
+/*-------------- Header Section Styles -------------- */
+
+/*-------------- Navigation Bar Styles -------------- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.hamburger{
+    visibility: hidden;
+}
+
+.nav-bar>ul {
+    display: flex;
+
+}
+.nav-bar li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-style: 1rem;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: #424247;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+}
+.home{
+    color: #FF5400;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.station {
+    color: #FF5400;
+}
+
+
+/* ------ Banner Section---------- */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 16px;
+    min-height: 600px;
+    filter: brightness(70%);
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h1 {
+    color: #FFF;
+    font-size: 4rem;
+}
+
+.banner-content p {
+    margin-top: 24px;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.banner-info-input {
+    /* background-color: transparent; */
+    margin-top: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.where-go,
+.when,
+.select-type {
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    width: 10.85rem;
+    height: 3.25rem;
+    padding-left: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+
+.banner-info-input .btn-primary {
+    font-size: 1rem;
+    width: 10.85rem;
+    height: 3.25rem;
+    padding: 0;
+
+} 
+/*---------Our Popular Tours Section styles------- */
+.our-popular-tours {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.our-popular-tours .text-title {
+    color: #131318;
+    font-size: 40px;
+    padding-bottom: 24px;
+}
+
+.our-popular-tours .text-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    padding-bottom: 8px;
+
+}
+
+.our-popular-tours-description-list {
+    padding-left: 30px;
+    padding-bottom: 8px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.our-popular-tours-description-list li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.our-popular-tours-content .btn-primary {
+    margin-top: 32px;
+}
+
+
+/*--------- Choose Your Destination Section styles ------- */
+
+.choose-your-destination {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choose-your-destination h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #131318;
+}
+
+.choose-your-destination p {
+    font-size: 16px;
+    padding-top: 24px;
+    line-height: 26px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+}
+
+.destination-img-section{
+    justify-items: center; 
+}
+.maldives, .indonesia, .srilanka,
+.america, .kashmir, .bangladesh, .bandarban{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+.maldives-content, .indonesia-content, .srilanka-content,
+.america-content, .kashmir-content, .bangladesh-content, .bandarban-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------Choose Your Destination image Section styles------- */
+.maldives img{
+    display: block;
+}
+
+.maldives-indonesia, .srilanka-america-kashmir, 
+.bangladesh-bandarban{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+    padding-bottom: 20px; 
+}
+/*----------- Create a holiday plan  -----------*/
+.choose-your-destination{
+
+}
+.create-holiday-card{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.create-holiday-card-icon{
+    display: flex;
+    gap: 20px;
+}
+.create-holiday-inside{
+    border-radius: 10px;
+    background-color: bisque;
+    border: 1px solid #FF5400;    
+}
+.fa-plane, .fa-train, .fa-bus{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+
+/*---------Why Choose Us Section styles------- */
+.why-choose-us {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-choose-us h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #131318;
+}
+
+.why-choose-us p {
+    font-size: 16px;
+    padding-top: 24px;
+    line-height: 26px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+}
+
+.why-choose-us-cards {
+    width: 73.125rem;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.handpicked-hotels {
+    border-radius: 1rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 2rem;
+}
+
+.handpicked-hotels img {
+    padding-bottom: 2rem;
+}
+
+.handpicked-hotels h1 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.handpicked-hotels p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.world-class-service {
+    border-radius: 1rem;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 2rem;
+}
+
+.world-class-service img {
+    padding-bottom: 2rem;
+}
+
+.world-class-service h1 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.world-class-service p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.best-price-guarantee {
+    width: 31.6rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 2rem;
+    margin: auto;
+
+}
+
+.best-price-guarantee img {
+    padding-bottom: 2rem;
+}
+
+.best-price-guarantee h1 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.best-price-guarantee p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*----------- newsletter section styles ------------*/
+.newsletter-section {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px; 
+
+}
+
+.newsletter-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.newsletter-content h1 {
+    color: #131318;
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.newsletter-content p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 24px;
+    
+}
+
+hr.line {
+    margin-bottom: 24px;
+    background: 1px solid rgba(19, 19, 24, 0.10);
+
+}
+
+.newsletter-name {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding: 16px 250px 16px 20px;
+    margin-bottom: 16px;
+}
+
+::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    /* padding: 16px 250px 16px 20px; */
+}
+
+.newsletter-email {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding: 16px 250px 16px 20px;
+}
+
+.newsletter-content .btn-primary {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 165px;
+    margin-top: 24px;
+}
+
+.newsletter-img {
+    position: relative;
+    text-align: center;
+}
+
+ .newsletter-save-up {
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    transform: rotate(-19.628deg);
+} 
+ .newsletter-save-up {
+    width: 300px;
+    border-radius: 20px;
+    background: #FF5400;
+    padding: 0;
+}
+
+.newsletter-save-up .text-description {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0;
+   
+}
+
+.newsletter-save-up .text-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+/* -------------footer section styles---------------- */
+
+.footer-section {
+   
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-logo {
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-description {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-description .text-description{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.footer-social-links {
+    padding-top: 33px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: rgba(19, 19, 24, 1);
+}
+
+hr.line-2 {
+    background: rgba(19, 19, 24, 0.10);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.copyright-massage{
+    color: #131318;
+    padding-bottom: 40px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 10px;
+} 
+
+
+/* -----------------Responsive Section------------------ */
+
+@media screen and (max-width: 600px) {
+    body{
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+  
+    .banner-content h1{
+      padding-top: 50px;
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: Mulish; 
+    }
+    .banner-content p{
+      font-size: 1rem;
+      
+    }
+
+    .nav{
+      justify-content: space-around;
+    }
+  
+    .banner-info-input{
+      margin-top: 0;
+      padding: 16px;
+      flex-direction: column; 
+     
+    }
+    .banner-info-input {
+        padding: 16px;
+    }
+    
+    .where-go,
+    .when,
+    .select-type {
+        width: 20rem;
+    }
+    
+    .banner-info-input .btn-primary {
+        width: 20rem;
+    } 
+    
+  
+    .nav-bar{
+      visibility: hidden;
+      display: none;
+    }
+    .hamburger{
+      visibility: visible;
+      padding-top: 20px;
+    }
+    .our-popular-tours{
+      margin-top: 25px;  
+      flex-direction: column;
+    }
+    .our-popular-tours-image{
+      order: 1;
+    }
+    .our-popular-tours-content{
+      order: 2;
+    }
+
+    .maldives-indonesia,
+    .srilanka-america-kashmir,
+    .bangladesh-bandarban{
+      flex-direction: column;
+    }
+    .destination-image{
+        width: 100%;
+    }
+  
+    .why-choose-us-cards{
+      width: 100%;
+    }
+    .cards{
+      flex-direction: column;
+    }
+    .newsletter-section{
+      width: 100%;
+      flex-direction: column;
+    }
+    .newsletter-picture{
+        width: 100%;
+    }
+    .newsletter-save-up {
+        position: absolute;
+        bottom: 45px;
+        right: 10px;
+        transform: rotate(-19.628deg);
+  }
+
+}
